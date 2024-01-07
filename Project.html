@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Almond Black Milk Tea</title>
+    <style>
+        .container {
+            background-color: #e6ccb3;
+            margin: 0 auto;
+            max-width: 700px;
+            padding: 60px;
+            
+
+        }
+        h1 {
+            display: block;
+            font-size: 30px;
+            text-align: center;
+            color: #4d2600;
+        }
+        h2 {
+            text-align: center;
+            border: 1px solid #734b26;
+            border-radius: 4px;
+            font-size: 18px;
+            padding: 20px;
+            color: #4d2600;
+        }
+        img {
+            max-width: 50%;
+            margin: 0 auto;
+            display: block;
+            
+        }
+        p {
+            line-height: 1.5;
+            font-size: 15px;
+            margin: 18px 0px 6px;
+            padding: 20px;
+        }
+        a {
+            display: block;
+            margin: 10px;
+            text-decoration: none;
+            color: #4d2600;
+            text-align: center;
+        }
+        a:hover {
+            text-decoration: underline;
+            
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            background-color: #cc9966;
+            border-radius: 8px;
+            font-size: 22px;
+            color: #e4cdb4;
+            border: 1px solid #966836;
+            transition: all 200ms ease-in-out;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        button:hover {
+            cursor: pointer;
+            opacity: 0.7;
+        }
+        .footer {
+           
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1><em>Bubbly Cup Of </em>
+     </h1>
+    <br />
+    <h2>
+        Almond Black Milk Tea 🧋
+    </h2>
+        <hr/>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/286/original/Boba_Milk_Tea.jpeg?1703456530" alt="milk tea"/>
+    <p>The drink that started it all is the classic black milk tea. Traditionally this is made with black tea and shaken with a non-dairy creamer; creating bubbles on top on the tea. There are multiple versions of this drink now with so many different toppings/sinkers and flavors.  Some of our customers favorite flavors are taro, almond, rose, caramel, and coconut. We have a wide range of flavors of milk teas and it’s honestly up to your preference. We sweeten it where we feel has a nice balance of sweetness and tea. If you don’t like your drinks too sweet or you’re just trying to cut back, you can always ask us to cut the sugar in quarters, half, etc. We also have sweet n low, stevia, and splenda available. </p>
+     <a href="https://letsbabble.com/" target="_blank">For more information</a>
+        <br />
+        <button class="order-button">Place your Order</button>
+        <p class="footer">This page was built by <strong><em>Omphile Tlholatlung</em></strong></p>
+
+</div>
+    <script>
+        function placeOrder() {
+            let name = prompt("What is your name?");
+            let favourite = prompt("Is Almond Black Milk Tea is your favourite?");
+            if (favourite === "yes") {
+                alert("Thank you  " + name + " " + "enjoy the taste of wealth 🤭")
+            }
+            else {
+                alert("Sorry about that" + " " + name + "😪" )
+            }
+        }
+        let orderButton = document.querySelector(".order-button");
+        orderButton.addEventListener("click", placeOrder);
+    </script> 
+</body>
+</html>
